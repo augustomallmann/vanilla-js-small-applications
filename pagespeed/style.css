@@ -1,0 +1,11 @@
+*,
+*:focus{
+  outline: none;
+}
+
+input.wrong-url{
+  border: 3px solid red;
+}
+input.correct-url{
+  border: 3px solid green;
+}

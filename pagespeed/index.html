@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PageSpeed</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form>
+    <input 
+    type="text" 
+    name="URL"
+    placeholder="URL"
+    id="urlInput"
+    >
+    <select id="strategySelector" name="select">
+      <option value="mobile">Mobile</option> 
+      <option value="desktop">Desktop</option>
+    </select>
+    <button 
+    type="submit"
+    id="analyzeUrl"
+    onclick="submitURL(event)"
+    >Enviar</button>
+  </form>
+  <script src="base.js"></script>
+</body>
+</html>
