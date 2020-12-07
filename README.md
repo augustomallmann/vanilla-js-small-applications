@@ -1,0 +1,1 @@
+# vanilla-js-small-applications
