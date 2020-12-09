@@ -9,3 +9,69 @@ input.wrong-url{
 input.correct-url{
   border: 3px solid green;
 }
+
+body{
+  color: #322c3d;
+  transition: background-color .9s;
+}
+body.dark-theme{
+  background-color: #322c3d;
+  color: #fff;
+}
+body.dark-theme .btn-custom{
+  background-color: #9c5def;
+  color: #322c3d;
+}
+input#urlInput{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 1rem 0;
+}
+.data-wrap{
+  height: 100vh;
+}
+.btn-custom{
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  margin: 1rem 0;
+  transition: background-color .9s;
+
+}
+
+.switcher-wrapper{
+  text-align: right;
+}
+
+.d-none{
+    display: none !important;
+}
+
+#loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #9c5def; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.mobile-strategy,
+.desktop-strategy{
+  max-width: 294px;
+  padding: 15px;
+  margin: 1rem 0;
+}
+.desktop-strategy{
+  background: rgb(88, 8, 219, 0.5);
+}
+.mobile-strategy{
+  background: rgb(88, 8, 219, 0.1);
+}

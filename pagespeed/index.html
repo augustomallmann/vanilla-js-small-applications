@@ -5,25 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PageSpeed</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-  <form>
-    <input 
-    type="text" 
-    name="URL"
-    placeholder="URL"
-    id="urlInput"
-    >
-    <select id="strategySelector" name="select">
-      <option value="mobile">Mobile</option> 
-      <option value="desktop">Desktop</option>
-    </select>
-    <button 
-    type="submit"
-    id="analyzeUrl"
-    onclick="submitURL(event)"
-    >Enviar</button>
-  </form>
+
+  <div class="container">
+   <div class="data-wrap d-flex flex-column align-items-center justify-content-center">
+    <form>
+      <div class="switcher-wrapper">
+        <label for="theme-switcher">Theme Switcher</label>
+      <input type="checkbox" id="theme-switcher" name="theme-switcher">
+      </div>
+      <input 
+      type="text" 
+      name="URL"
+      placeholder="URL"
+      id="urlInput"
+      >
+  
+      <button 
+      class="btn-custom"
+      type="submit"
+      id="analyzeUrl"
+      onclick="submitURL(event, strategy)"
+      >Run</button>
+    </form>
+    <div id="loader" class="my-5 d-none"></div>
+
+    <div id="results">
+    </div>
+
+   </div>
+  </div>
   <script src="base.js"></script>
 </body>
 </html>
